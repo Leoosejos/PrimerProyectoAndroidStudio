@@ -12,7 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.composables.ButtonExample
+import com.example.myapplication.composables.CounterScreen
 import com.example.myapplication.composables.ImageExample
+import com.example.myapplication.composables.ListExample
 import com.example.myapplication.composables.ProfileExample
 import com.example.myapplication.composables.TextExample
 import com.example.myapplication.ui.theme.MyApplicationTheme
@@ -22,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ProfileExample()
+            CounterScreen(Modifier.fillMaxSize())
             }
         }
     }
